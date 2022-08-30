@@ -1,0 +1,51 @@
+sort1 uses: Bubble sort
+real 0m0.087s user 0m0.057s sys 0m0.016s } for random5000.txt
+real 0m0.341s user 0m0.254s sys 0m0.042s } for random10000.txt
+real 0m11.243s user 0m6.776s sys 0m0.175s} for random50000.txt
+
+real 0m0.112s user 0m0.061s sys 0m0.019s } for reversed5000.txt
+real 0m0.274s user 0m0.209s sys 0m0.025s } for reversed10000.txt
+real 0m8.209s user 0m4.891s sys 0m0.189s } for reversed50000.txt
+
+real 0m0.042s user 0m0.000s sys 0m0.022s } for sorted5000.txt
+real 0m0.074s user 0m0.012s sys 0m0.024s } for sorted10000.txt
+real 0m3.422s user 0m0.029s sys 0m0.151s } for sorted50000.txt
+
+How do you know?: Bubble sort has omega (n) notation which means that in
+the best case when everything is sorted it will take the least time,
+however big O (n²) notation isn't that great and we can see that apart
+from the sorted text files, bubble sort was the slowest.
+
+sort2 uses: Merge Sort
+real 0m0.051s user 0m0.000s sys 0m0.023s } for random5000.txt
+real 0m0.082s user 0m0.017s sys 0m0.027s } for random10000.txt
+real 0m3.383s user 0m0.058s sys 0m0.129s } for random50000.txt
+
+real 0m0.034s user 0m0.004s sys 0m0.019s } for reversed5000.txt
+real 0m0.072s user 0m0.000s sys 0m0.044s } for reversed10000.txt
+real 0m2.433s user 0m0.048s sys 0m0.158s } for reversed50000.txt
+
+real 0m0.036s user 0m0.000s sys 0m0.023s } for sorted5000.txt
+real 0m0.080s user 0m0.012s sys 0m0.031s } for sorted10000.txt
+real 0m3.443s user 0m0.049s sys 0m0.155s } for sorted50000.txt
+
+How do you know?: Because Merge sort has a running time of
+theta n logn which means that it has the fastest overall running time
+apart from bubble sort which is faster when it comes to sorted numbers.
+
+sort3 uses: Selection sort
+real 0m0.057s user 0m0.026s sys 0m0.022s } for random5000.txt
+real 0m0.154s user 0m0.107s sys 0m0.034s } for random10000.txt
+real 0m5.154s user 0m2.676s sys 0m0.180s } for random50000.txt
+
+real 0m0.064s user 0m0.024s sys 0m0.024s } for reversed5000.txt
+real 0m0.203s user 0m0.107s sys 0m0.037s } for reversed10000.txt
+real 0m5.633s user 0m2.825s sys 0m0.160s } for reversed50000.txt
+
+real 0m0.074s user 0m0.026s sys 0m0.022s } for sorted5000.txt
+real 0m0.182s user 0m0.126s sys 0m0.031s } forsorted10000.txt
+real 0m7.002s user 0m2.546s sys 0m0.195s } forsorted50000.txt
+
+How do you know?: Selection sort is theta (n²) faster than bubble sort
+but not for a lot and definitely not faster for sorted numbers.
+
