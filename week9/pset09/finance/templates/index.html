@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+                <tr>
+                    <td class="text-start">{{ transaction.symbol }}</td>
+                    <td class="text-start">{{ transaction.name }}</td>
+                    <td class="text-end">{{ transaction.shares }}</td>
+                    <td class="text-end">{{ current[transaction["symbol"]] | usd }}</td>
+                    <td class="text-end">{{ (current[transaction["symbol"]] * transaction.shares) | usd }}</td>
+                    <td class="text-end">
+                        <form action="/buy" method="post">
+                            <div class="mb-3">
+                                <input name="symbol" value="{{ transaction.symbol }}" id="buy-symbol">
+                                <input name="shares" autofocus="" autocomplete="off" class=" input-width " type="number" min="1" required>
+                                <button class="btn btn-primary" type="submit">BUY</button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot >
+            <tr>
+                <th class="text-end" colspan="4">Cash</th>
+                <td class="text-end">{{ cash | usd }}</td>
+            </tr>
+            <tr>
+                <th class="text-end" colspan="4">TOTAL</th>
+                <td class="text-end">{{ totalCash | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}
