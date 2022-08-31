@@ -1,0 +1,75 @@
+body {
+    color: #232323;
+    background-color: #412761;
+}
+
+.h1 {
+    color: #c1ec49;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.h1-text {
+    margin-top: 10vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+#project-slide-show {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#link img {
+    transition: 0.2s all ease-in-out;
+}
+
+#link:hover img {
+    transform: scale(1.1);
+}
+
+.image-styled {
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 250px;
+    height: 170px;
+    border-radius: 2px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+p {
+    color: white;
+}
+
+p a {
+    color: lightgray;
+}
+
+p a:hover {
+    color: white;
+    transition: 200ms;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 2px;
+}

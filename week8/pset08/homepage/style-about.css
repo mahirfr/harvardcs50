@@ -1,0 +1,52 @@
+body {
+    background-color: #412761;
+}
+
+.h1 {
+    color: #c1ec49;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.h2 {
+    color: lightgray;
+    margin-top: 5rem;
+}
+
+i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+main {
+    max-width: 360px;
+    text-align: center;
+    margin: 10vh auto 20vh auto;
+}
+
+p {
+    color: #fbfacc;
+    margin: 2rem 0 2rem 0;
+}
+
+p a {
+    color: lightgray;
+}
+
+p a:hover {
+    color: white;
+    transition: 200ms;
+}
+
+p:last-child {
+    font-size: 0.8rem;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 2px;
+}

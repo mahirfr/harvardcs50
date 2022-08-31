@@ -1,0 +1,55 @@
+body {
+    color: #232323;
+    background-color: #412761;
+}
+
+.h1 {
+    color: #c1ec49;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 70vh
+}
+
+.h2 {
+    color: #cecece;
+}
+
+.h-text-margin {
+    margin-top: 30vh;
+    margin-bottom: 15vh;
+}
+
+i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+p {
+    color: white;
+}
+
+p a {
+    color: lightgray;
+}
+
+p a:hover {
+    color: white;
+    transition: 200ms;
+}
+
+.p-text-margin {
+    margin: 10vh 5vh 25vh 5vh;
+}
+
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 2px;
+}

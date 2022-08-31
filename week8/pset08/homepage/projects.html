@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device_witdth">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="style-projects.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4e0c58162e.js" crossorigin="anonymous"></script>
+        <script>
+          function changeImage() {
+            var image = document.getElementById("imgChange");
+            var link = document.getElementById("link");
+            if (image.getAttribute("src") == "tribute.png") {
+              image.src = "nail_clippers.png";
+              link.href = "https://codepen.io/moneystreet/pen/ZEJjpWM";
+            }
+            else if (image.getAttribute("src") == "nail_clippers.png") {
+              image.src = "restaurant.png";
+              link.href = "https://codepen.io/moneystreet/pen/zYdPeVO";
+            }
+            else if (image.getAttribute("src") == "restaurant.png") {
+              image.src = "technical_doc.png";
+              link.href = "https://codepen.io/moneystreet/pen/QWMzXGV";
+            }
+            else if (image.getAttribute("src") == "technical_doc.png") {
+              image.src = "old_portfolio.png";
+              link.href = "https://codepen.io/moneystreet/pen/OJxVqNg";
+            }
+            else {
+              image.src = "tribute.png";
+              link.href = "https://codepen.io/moneystreet/pen/vYJJvQL";
+            }
+          }
+        </script>
+        <title>My Webpage</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><h1>👋</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home <i class="fa-solid fa-house"></i></a>
+                <a class="nav-link" href="projects.html">Projects <i class="fa-solid fa-rocket"></i></a>
+                <a class="nav-link" href="about.html">About <i class="fa-solid fa-child-reaching"></i></a>
+                <a class="nav-link" href="contact.html">Contact <i class="fa-solid fa-mug-hot"></i></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <header>
+          <div>
+            <h1 class="h1 h1-text">
+              <strong>PROJECTS</strong>
+            </h1>
+          </div>
+        </header>
+
+        <main>
+          <div id="project-slide-show">
+            <a href="https://codepen.io/moneystreet/pen/vYJJvQL" id="link"><image alt="projects" src="tribute.png" id="imgChange" class="image-styled"></a>
+            <button id="button" class="btn btn-primary m-5" onclick="changeImage();">Next Project</button>
+          </div>
+        </main>
+
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center text-light p-3">
+              © 2022 Copyright:
+              <a class="text-light" href="contact.html">Mahir</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </body>
+</html>

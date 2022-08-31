@@ -1,0 +1,39 @@
+body {
+    background-color: #412761;
+}
+
+.h1 {
+    color: #c1ec49;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+main {
+    max-width: 360px;
+    text-align: center;
+    margin: 10vh auto 20vh auto;
+}
+
+a img {
+    max-width: 200px;
+    max-height: 200px;
+    transition: 0.2s all ease-in-out;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-radius: 2px;
+}
